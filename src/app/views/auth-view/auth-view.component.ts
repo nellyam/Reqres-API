@@ -34,9 +34,6 @@ export class AuthViewComponent implements OnInit {
     this.errMessage = undefined;
 
     const formValues = this.authForm.value;
-    console.log(formValues); // output: {email: "nellynellyam@gmail.com", password: "azerty"}
-    console.log(this.authForm.value.email);//output: nellynellyam@gmail.com
-    console.log(formValues.email);//output: nellynellyam@gmail.com
     this.authService.checkAuth(formValues.email, formValues.password)
     .then(() => {
       this.router.navigate(['users']);

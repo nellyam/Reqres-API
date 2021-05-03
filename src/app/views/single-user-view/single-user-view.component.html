@@ -1,1 +1,11 @@
-<p>single-user-view works!</p>
+<div class="container">
+  <app-header></app-header>
+  <div class="card mx-auto" style="width: 18rem;">
+  <img [src]="user.avatar" class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title">{{user.first_name}} {{user.last_name}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{user.email}}</h6>
+    <a routerLink="/users">Retour vers les utilisateurs</a>
+  </div>
+</div>
+</div>>

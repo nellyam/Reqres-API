@@ -1,3 +1,8 @@
 <td>{{userId}}</td>
 <td>{{userFirstName}}</td>
 <td>{{userLastName}}</td>
+<td>
+  <button class="m-2 btn btn-primary" (click)="onClickShowDetailsUser()">Détail</button>
+  <button class="m-2 btn btn-warning" (click)="onClickEditUser()">Modifier</button>
+  <button class="m-2 btn btn-danger" (click)="onClickDelete()">Supprimer</button>
+</td>
